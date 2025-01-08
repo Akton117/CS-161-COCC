@@ -1,0 +1,43 @@
+# Task 1
+pet_type = "cat"  # Set pet type
+pet_name = "Oliver"  # Set pet name
+
+# f-String to print
+print(f"I have a {pet_type} and her name is {pet_name}.")
+
+# Task 2
+first_name = input("Enter your first name: ")
+age = int(input("Enter your current age: "))
+yearly_savings = int(input("Enter your yearly savings: "))
+
+# f-String to print 
+print(f"Hello {first_name}! You are currently {age} years old.")
+print(f"In 10 years, you will be {age + 10} years old.")
+print(f"If you save ${yearly_savings} each year, in 5 years you will have saved ${yearly_savings * 5}.")
+print(f"Your average monthly savings is ${yearly_savings / 12:.2f}.")
+
+# Task 3
+import datetime
+import calendar
+
+# current month and year
+now = datetime.datetime.now()
+current_month = now.month
+current_year = now.year
+
+# number of days in the current month
+days_in_month = calendar.monthrange(current_year, current_month)[1]
+
+# Calculate the number of seconds 
+seconds_in_month = days_in_month * 24 * 60 * 60
+
+# print the result
+print(f"The number of seconds in {calendar.month_name[current_month]} is {seconds_in_month}.")
+
+# Task 4
+number_of_eggs = int(input("Enter the number of eggs: "))
+full_dozens = number_of_eggs // 12  # division for full dozens
+remaining_eggs = number_of_eggs % 12  # remaining eggs
+
+# print the result
+print(f"This makes {full_dozens} dozen eggs with {remaining_eggs} left over.")
