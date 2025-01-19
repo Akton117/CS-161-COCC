@@ -1,8 +1,8 @@
-# Part 1: Binary and Decimal Representations
+# Binary and Decimal Representations
 x = 90
 print("Decimal:", x, "Binary:", bin(x), "Hexadecimal:", hex(x))  # Binary and hexadecimal representation
 
-# Part 2: Error Identification
+# Error Identification
 # Change x to a float
 x = 1.825
 # @comment: The error occurs because bin() only works with integers, not floats.
@@ -11,16 +11,16 @@ x = 1.825
 x = 18
 print("Decimal:", x, "Binary:", bin(x))
 
-# Part 3: Binary and Hexadecimal Assignments
+# Binary and Hexadecimal Assignments
 y = 0b1011  # Binary value for 11
 z = 0xA3    # Hexadecimal value for 163
 print("Binary y:", y, "Hexadecimal z:", z)
 
-# Part 4: Addition in Different Representations
+# Addition in Different Representations
 w = y + x + z
 print("The sum is:", w)
 
-# Part 5: Compression Calculation
+# Compression Calculation
 # Meaningful variable names
 original_size = 240
 compressed_text_size = 148
